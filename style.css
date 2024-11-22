@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(135deg, #c3e8d1, #a7d8c1);
+    color: #2f4f4f;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Image Row Section */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between images */
+    margin: 40px 0; /* Adds space around the image section */
+}
+
+.image-row img {
+    width: 250px; /* All images will have equal size */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image fits inside the container */
+}
+
+/* Description Section */
+.description {
+    background-image: url('mint-leaves.png'), url('chocolate-chips.png');
+    background-size: contain, 50px;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ice-cream-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.fun-fact {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Logo */
+footer .logo svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* Company Information */
+footer .company-info p {
+    font-size: 1rem;
+    color: #2f4f4f;
+}
+
+/* Contact Form */
+footer .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between form elements */
+}
+
+/* Group for Name and Email Inputs (side by side) */
+.input-group {
+    display: flex;
+    gap: 20px; /* Space between name and email */
+    justify-content: center;
+}
+
+.input-group input {
+    width: 45%;  /* Make both inputs take up equal space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Message Section */
+.message-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 500px;
+}
+
+.message-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    height: 150px; /* Set a height for the message box */
+}
+
+.message-group button {
+    align-self: flex-end; /* Align button to the right of the message box */
+    padding: 10px 20px;
+    background-color: #8fd1b8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.message-group button:hover {
+    background-color: #7bc89c;
+}
